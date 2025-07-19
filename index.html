@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<style>
+	.dropbtn {
+	  background-color: #3498DB;
+	  color: white;
+	  /*padding: 16px;*/
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	  width: 1000px;
+	  height: 40px;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: #2980B9;
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 1000px;
+	  overflow: auto;
+ 	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown a:hover {background-color: #ddd;}
+
+	.show {display: block;}
+	</style>
+</head>
+<body style="background-color:#f7f7f0">
+<span id="0" style="font-size:25px">提示：点击<mark>任意一个标题</mark>可以<mark>返回顶部</mark>，点击<mark>下拉菜单中的内容</mark>可以<mark>快速跳转</mark>，你还可以使用<mark>Ctrl+F</mark>来<mark>搜索</mark></span>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">点我打开下拉菜单</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#1">1.Just enough item（简称JEI）、Roughly Enough Items（中文译名：REI物品管理器）</a>
+    <a href="#2">2.Jade（中文译名：玉）.</a>
+    <a href="#3">3.Sodium（中文译名：钠）、Sodium Extra（中文译名：钠 · 扩展）和Reese&#39;s Sodium Options（中文译名Reese的钠视频界面）</a>
+    <a href="#4">4.Rubidium（中文译名：铷，但已停更）、Embeddium（仍在更新）和Beddium</a>
+    <a href="#5">5.Item Scroller（中文译名：物品滚轮）</a>
+    <a href="#6">6.Rock&#39;n Roller</a>
+    <a href="#7">7.Presence Footsteps（中文译名：脚步声）</a>
+    <a href="#8">8.Presence Footsteps (Forge)（中文译名：脚步声Forge版）</a>
+    <a href="#9">9.AdvancementInfo（中文译名：进度信息展示，但已停更）、AdvancementInfo Reloaded（仍在更新）和Advancements Tracker and Overview（中文译名：进度追踪器概览）</a>
+    <a href="#10">10.BetterF3（中文译名：更好的F3）</a>
+    <a href="#11">11.Chat Heads（中文译名：聊天头像）</a>
+    <a href="#12">12.Screenshot to Clipboard（中文译名：截图到剪贴板）</a>
+    <a href="#13">13.Xaero&#39;s Minimap（中文译名：Xaero的小地图）</a>
+    <a href="#14">14.Xaero&#39;s World Map（中文译名：Xaero的世界地图）</a>
+    <a href="#15">15.Better Statistics Screen（中文译名：更好的统计信息界面）</a>
+    <a href="#16">16.Better Ping Display（中文译名：更好的延迟显示）</a>
+    <a href="#17">17.Think Before Drop（中文译名：丢弃物品保护）</a>
+    <a href="#18">18.Detail Armor Bar（中文译名：细节盔甲）</a>
+    <a href="#19">19.Skin Layers 3D（中文译名：3D皮肤层）</a>
+    <a href="#20">20.Armor Visibility</a>
+    <a href="#21">21.Continuity</a>
+    <a href="#22">22.IMBlocker（中文译名：输入法冲突修复）</a>
+    <a href="#23">23.AppleSkin（中文译名：苹果皮）</a>
+    <a href="#24">24.Trade Enchantment Display（中文译名：交易附魔显示）</a>
+    <a href="#25">25.Leawind&#39;s Third Person（中文译名：Leawind的第三人称）</a>
+    <a href="#26">26.Better Mount HUD（中文译名：更好的骑乘HUD）、Leave My Bars Alone（中文译名：改进的骑乘HUD）和Better Horse Hud（中文译名：更好的骑马 HUD）</a>
+    <a href="#27">27.Advanced XRay（中文译名：高级透视）</a>
+    <a href="#28">28.litematica（中文译名：投影）</a>
+    <a href="#29">29.Forgematica/Litematica-Forge（中文译名：全息蓝图）</a>
+    <a href="#30">30.MiniHUD（中文译名：迷你HUD）</a>
+    <a href="#31">31.BoccHUD/MiniHUD-Forge（中文译名：孤独HUD）</a>
+    <a href="#32">32.Tweakeroo和TweakerMore</a>
+    <a href="#33">33.Tweakerge</a>
+  </div>
+</div>
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="1">1.Just enough item（简称JEI）、Roughly Enough Items（中文译名：REI物品管理器）</h2></a>
+
+<p>描述：查看原版以及模组的物品制作配方<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：<br />
+Just enough item（简称JEI）：无<br />
+Roughly Enough Items（中文译名：REI物品管理器）：无<br />
+前置模组：<br />
+Just enough item（简称JEI）：无<br />
+Roughly Enough Items（中文译名：REI物品管理器）：<code>Fabric API（fabric）</code>、<code>Cloth Config API（fabric≥1.16.2或forge）</code>、<code>Architectury API（Fabric≥1.17或forge）</code><br />
+支持的模组加载器：<br />
+Just enough item（简称JEI）：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+Roughly Enough Items（中文译名：REI物品管理器）：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<br />
+Just enough item（简称JEI）：<code>fabric1.18.2-1.21.1</code> <code>forge1.8-1.21.1</code> <code>neoforge1.20.4、1.20.6、1.21、1.21.1</code><br />
+Roughly Enough Items（中文译名：REI物品管理器）：<code>fabric1.14-1.21.4</code> <code>forge1.13.2、1.16.4-1.20.4</code> <code>neoforge1.20.2、1.20.4-1.21.4</code><br />
+MC百科链接：<a target="_blank" href="https://www.mcmod.cn/class/459.html">Just enough item（简称JEI）</a> <a target="_blank" href="https://www.mcmod.cn/class/1674.html">Roughly Enough Items（中文译名：REI物品管理器）</a><br />
+modrinth链接： <a target="_blank" href="https://modrinth.com/mod/jei">Just enough item（简称JEI）</a> <a target="_blank" href="https://modrinth.com/mod/rei">Roughly Enough Items（中文译名：REI物品管理器）</a><br />
+curseforge链接：<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/jei">Just enough item（简称JEI）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items">Roughly Enough Items（中文译名：REI物品管理器）</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="2">2.Jade（中文译名：玉）</h2></a>
+
+<p>描述：查看准心指向的生物和方块的信息<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：无<br />
+前置模组：无<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.17.1-1.21.4</code> <code>forge1.12.2-1.20.4</code> <code>neoforge1.20.1-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/3482.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/jade">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/jade">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="3">3.Sodium（中文译名：钠）、Sodium Extra（中文译名：钠 · 扩展）和Reese&#39;s Sodium Options（中文译名Reese的钠视频界面）</h2></a>
+
+<p>描述：优化原版渲染机制以及改变原版视频设置界面<br />
+是否支持中文：是<br />
+辅助性：★★★★★<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：<br />
+Sodium（中文译名：钠）：<code>fabric api base（fabric和neoforge）</code>、<code>fabric block view api v2（fabric和neoforge）</code>、<code>fabric renderer api v1（fabric和neoforge）</code>、<code>fabric rendering data attachment v1（fabric和neoforge）</code>、<code>fabric rendering fluids v1（fabric）</code>、<code>fabric resource loader v0（fabric）</code><br />
+Sodium Extra（中文译名：钠 · 扩展）：无<br />
+Reese&#39;s Sodium Options（中文译名Reese的钠视频界面）：无<br />
+前置模组：<br />
+Sodium（中文译名：钠）：无<br />
+Sodium Extra（中文译名：钠 · 扩展）：<code>Fabric API（fabric）</code>、<code>Sodium（中文译名：钠，fabric和neoforge）</code><br />
+Reese&#39;s Sodium Options（中文译名Reese的钠视频界面）：<code>Sodium（中文译名：钠，fabric和neoforge）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>neoforge</code><br />
+支持的版本：<br />
+Sodium（中文译名：钠）：<code>fabric1.16.1-1.21.4</code> <code>neoforge1.21-1.21.4</code><br />
+Sodium Extra（中文译名：钠 · 扩展）：<code>fabric1.16.2-1.21.4</code> <code>neoforge1.21-1.21.4</code><br />
+Reese&#39;s Sodium Options（中文译名Reese的钠视频界面）：<code>fabric1.16.2-1.21.4</code> <code>neoforge1.21-1.21.4</code><br />
+MC百科链接：<br />
+<a target="_blank" href="https://www.mcmod.cn/class/2785.html">Sodium（中文译名：钠）</a> <a target="_blank" href="https://www.mcmod.cn/class/3701.html">Sodium Extra（中文译名：钠 · 扩展）</a> <a target="_blank" href="https://www.mcmod.cn/class/4905.html">Reese&#39;s Sodium Options（中文译名Reese的钠视频界面）</a><br />
+modrinth链接：<br />
+<a target="_blank" href="https://modrinth.com/mod/sodium">Sodium（中文译名：钠）</a> <a target="_blank" href="https://modrinth.com/mod/sodium-extra">Sodium Extra（中文译名：钠 · 扩展）</a> <a target="_blank" href="https://modrinth.com/mod/reeses-sodium-options">Reese&#39;s Sodium Options（中文译名Reese的钠视频界面）</a><br />
+curseforge链接：<br />
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/sodium">Sodium（中文译名：钠）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/sodium-extra">Sodium Extra（中文译名：钠 · 扩展）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/reeses-sodium-options">Reese&#39;s Sodium Options（中文译名Reese的钠视频界面）</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="4">4.Rubidium（中文译名：铷，但已停更）、Embeddium（仍在更新）和Beddium</h2></a>
+
+<p>描述：优化原版渲染机制以及改变原版视频设置界面（Sodium（中文译名：钠）的非官方移植）<br />
+是否支持中文：是<br />
+辅助性：★★★★★<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：<br />
+Rubidium（中文译名：铷，但已停更）：无<br />
+Embeddium（仍在更新）：无<br />
+Beddium：<code>mixinextras</code><br />
+前置模组：<br />
+Rubidium（中文译名：铷，但已停更）：无<br />
+Embeddium（仍在更新）：无<br />
+Beddium：无<br />
+支持的模组加载器：<br />
+Rubidium（中文译名：铷，但已停更）：<code>forge</code>、<code>neoforge</code><br />
+Embeddium（仍在更新）：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+Beddium：<code>forge</code><br />
+支持的版本：<br />
+Rubidium（中文译名：铷，但已停更）：<code>forge1.16.5-1.20.1</code> <code>neoforge：1.20.1</code><br />
+Embeddium（仍在更新）：<code>fabric1.20.1-1.20.6</code> <code>forge1.16.5、1.18.2、1.19.2、1.20.1、1.20.2</code> <code>neoforge1.20.1-1.21.1</code><br />
+Beddium：<code>forge1.21、1.21.1</code><br />
+MC百科链接：<a target="_blank" href="https://www.mcmod.cn/class/5608.html">Rubidium（中文译名：铷，但已停更）</a> <a target="_blank" href="https://www.mcmod.cn/class/12028.html">Embeddium（仍在更新）</a> <a target="_blank" href="https://www.mcmod.cn/class/15745.html">Beddium</a><br />
+modrinth链接：<a target="_blank" href="https://modrinth.com/mod/rubidium">Rubidium（中文译名：铷，但已停更）</a> <a target="_blank" href="https://modrinth.com/mod/embeddium">Embeddium（仍在更新）</a> <a target="_blank" href="https://modrinth.com/mod/beddium">Beddium</a><br />
+curseforge链接：<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/rubidium">Rubidium（中文译名：铷，但已停更）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/embeddium">Embeddium（仍在更新）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/beddium">Beddium</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="5">5.Item Scroller（中文译名：物品滚轮）</h2></a>
+
+<p>描述：在原版的基础上新增了多种移动物品的方法<br />
+是否支持中文：否，但有汉化包（<a target="_blank" href="https://github.com/DreamingLri/masa-mods-chinese/releases">链接</a>，可能需要GitHub加速）<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：无<br />
+前置模组：<code>Fabric API（fabric）</code>、<code>Masa's Litemod Library（简称MaLiLib，fabric和forge）</code><br />
+支持的模组加载器：<code>fabric（高版本）</code>、<code>forge（低版本）</code><br />
+支持的版本：<code>fabric1.12-1.21.4</code> <code>forge1.7.10-1.15.2</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/1529.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/item-scroller">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/item-scroller">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="6">6.Rock&#39;n Roller</h2></a>
+
+<p>描述：在原版的基础上新增了多种移动物品的方法（Item Scroller（中文译名：物品滚轮）的非官方移植）<br />
+是否支持中文：否<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：无<br />
+前置模组：<code>MaFgLib/MaLiLib-Forge（forge和neoforge）</code><br />
+支持的模组加载器：<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>forge1.16.4-1.20.1</code> <code>neoforge1.20.1-1.21.1</code>
+<a target="_blank" href="https://www.mcmod.cn/class/11618.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/rocknroller">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/rockn-roller">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="7">7.Presence Footsteps（中文译名：脚步声）</h2></a>
+
+<p>描述：为多种方块添加了自己的踩踏音效<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：<code>kirin</code><br />
+前置模组：<code>Fabric API（fabric）</code><br />
+支持的模组加载器：<code>fabric</code><br />
+支持的版本：<code>1.14-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/4753.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/presence-footsteps">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/presence-footsteps">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="8">8.Presence Footsteps (Forge)（中文译名：脚步声Forge版）</h2></a>
+
+<p>描述：为多种方块添加了自己的踩踏音效（Presence Footsteps（中文译名：脚步声）的非官方移植）<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：无<br />
+前置模组：无<br />
+支持的模组加载器：<code>forge</code><br />
+支持的版本：<code>1.16.4-1.20.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/4819.html">MC百科链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/presence-footsteps-forge">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="9">9.AdvancementInfo（中文译名：进度信息展示，但已停更）、AdvancementInfo Reloaded（仍在更新）和Advancements Tracker and Overview（中文译名：进度追踪器概览）</h2></a>
+
+<p>描述：增大进度界面的UI并显示进度具体完成需要<br />
+是否支持中文：否<br />
+辅助性：★★★★✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：<br />
+AdvancementInfo（中文译名：进度信息展示，但已停更）：无<br />
+AdvancementInfo Reloaded（仍在更新）：<code>Cloth Config API（fabric）</code>、<code>fabric resource loader v0（fabric）</code><br />
+Advancements Tracker and Overview（中文译名：进度追踪器概览）：无<br />
+前置模组：<br />
+AdvancementInfo（中文译名：进度信息展示，但已停更）：无<br />
+AdvancementInfo Reloaded（仍在更新）：<code>Fabric API</code><br />
+Advancements Tracker and Overview（中文译名：进度追踪器概览）：无<br />
+支持的模组加载器：<br />
+AdvancementInfo（中文译名：进度信息展示，但已停更）：<code>fabric</code><br />
+AdvancementInfo Reloaded（仍在更新）：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+Advancements Tracker and Overview（中文译名：进度追踪器概览）：<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<br />
+AdvancementInfo（中文译名：进度信息展示，但已停更）：<code>fabric1.16.1-1.21.4</code><br />
+AdvancementInfo Reloaded（仍在更新）：<code>fabric1.21-1.21.4</code> <code>forge1.21-1.21.4</code> <code>neoforge1.21-1.21.4</code><br />
+Advancements Tracker and Overview（中文译名：进度追踪器概览）：<code>forge1.16.5-1.20.1</code> <code>neoforge1.20.1</code><br />
+MC百科链接：
+<a target="_blank" href="https://www.mcmod.cn/class/5314.html">AdvancementInfo（中文译名：进度信息展示，但已停更）</a> <a target="_blank" href="https://www.mcmod.cn/class/15630.html">AdvancementInfo Reloaded（仍在更新）</a> <a target="_blank" href="https://www.mcmod.cn/class/5584.html">Advancements Tracker and Overview（中文译名：进度追踪器概览）</a><br />
+modrinth链接： <a target="_blank" href="https://modrinth.com/mod/advancementinfo">AdvancementInfo（中文译名：进度信息展示，但已停更）</a>
+<a target="_blank" href="https://modrinth.com/mod/advancements-reloaded">AdvancementInfo Reloaded（仍在更新）</a> <a target="_blank" href="https://modrinth.com/mod/advancements-tracker">Advancements Tracker and Overview（中文译名：进度追踪器概览）</a><br />
+curseforge链接：
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/advancementinfo">AdvancementInfo（中文译名：进度信息展示，但已停更）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/advancements-reloaded">AdvancementInfo Reloaded（仍在更新）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/advancements-tracker">Advancements Tracker and Overview（中文译名：进度追踪器概览）</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="10">10.BetterF3（中文译名：更好的F3）</h2></a>
+
+<p>描述：更改了原版按F3打开的调试界面的样式，使其可以高度自定义<b>（但会显著降低帧率）</b><br />
+是否支持中文：是<br />
+辅助性：★★★✰✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：<code>Cloth Config API（fabric）</code>、<code>fabric resource loader v0（fabric）</code><br />
+前置模组：<code>Cloth Config API（fabric、forge和neoforge）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.16-1.21.4</code> <code>forge1.16.1-1.21.1</code> <code>neoforge1.20.2-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/3525.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/betterf3">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/betterf3">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="11">11.Chat Heads（中文译名：聊天头像）</h2></a>
+
+<p>描述：在玩家所发送的信息前显示其皮肤头像，使得分辨玩家相对更加容易。<br />
+是否支持中文：是<br />
+辅助性：★★✰✰✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：<code>mixinextras（forge）</code><br />
+前置模组：<code>Cloth Config API（fabric、forge和neoforge）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.16-1.21.4</code> <code>forge1.16.3-1.21.1</code> <code>neoforge1.20.2-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/4523.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/chat-heads">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/chat-heads">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="12">12.Screenshot to Clipboard（中文译名：截图到剪贴板）</h2></a>
+
+<p>描述：在游戏中的截图都会被自动复制到剪切板上<br />
+是否支持中文：不涉及<br />
+辅助性：★★★✰✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：无<br />
+前置模组：无<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.14.2-1.21.1</code> <code>forge1.10.2-1.20.6</code> <code>neoforge1.20.6-1.21.1</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/2733.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/screenshot-to-clipboard">modrinth链接</a><br />
+curseforge链接：<br />
+<a target="_blank" href="https://modrinth.com/mod/screenshot-to-clipboard">fabric</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/screenshot-to-clipboard">forge</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="13">13.Xaero&#39;s Minimap（中文译名：Xaero的小地图）</h2></a>
+
+<p>描述：在游戏的左上角（位置可更改）添加了一个小地图<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★★✰✰✰<br />
+内置模组：无<br />
+前置模组：无<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.14.4-1.21.4</code> <code>forge1.7.10-1.21.4</code> <code>neoforge1.20.1-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/1701.html">MC百科链接</a><br />
+modrinth链接：<br />
+<a target="_blank" href="https://modrinth.com/mod/xaeros-minimap-fair">公平竞争版</a> <a target="_blank" href="https://modrinth.com/mod/xaeros-minimap">完整版</a><br />
+curseforge链接：<br />
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap-fair-play-edition">公平竞争版</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap">完整版</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="14">14.Xaero&#39;s World Map（中文译名：Xaero的世界地图）</h2></a>
+
+<p>描述：添加了一个自动缓存的全屏地图<br />
+是否支持中文：否<br />
+辅助性：★★★★✰<br />
+作弊性：★★✰✰✰<br />
+内置模组：无<br />
+前置模组：无<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.14.4-1.21.4</code> <code>forge1.7.10-1.21.4</code> <code>neoforge1.20.1-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/1483.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/xaeros-world-map">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="15">15.Better Statistics Screen（中文译名：更好的统计信息界面）</h2></a>
+
+<p>描述：更改了原版的统计信息界面，使其更容易查阅、导出和导入<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：无<br />
+前置模组：<code>Fabric API</code>、<code>TCDCommons API</code>（前置<code>Architectury API</code>）<br />
+支持的模组加载器：<code>fabric</code><br />
+支持的版本：<code>1.18.1-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/8030.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/better-stats">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/better-stats">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="16">16.Better Ping Display（中文译名：更好的延迟显示）</h2></a>
+
+<p>描述：在玩家列表中添加了以数字形式显示的每个玩家的 ping 值<br />
+是否支持中文：不涉及<br />
+辅助性：★★✰✰✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：无<br />
+前置模组：无<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.15.2-1.21.3</code> <code>forge1.7.10、1.12.2、1.15.2、1.16.5、1.17.1、1.18.2、1.19、1.19.4、1.20.1、1.20.4、1.21.1、1.21.3、1.21.4</code> <code>neoforge1.21.1、1.21.3、1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/2950.html">MC百科链接</a><br />
+modrinth链接：<br />
+<a target="_blank" href="https://modrinth.com/mod/better-ping-display-fabric">fabric</a> <a target="_blank" href="https://modrinth.com/mod/better-ping-display">forge</a>
+curseforge链接：<br />
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/better-ping-display-fabric">fabric</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/better-ping-display">forge</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="17">17.Think Before Drop（中文译名：丢弃物品保护）</h2></a>
+
+<p>描述：在丢弃特定的物品（可更改）时会在按第一次Q时阻止你丢弃，防止手误<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：无<br />
+前置模组：<code>Masa's Litemod Library（简称MaLiLib，对于1.x版本而言）</code>、<code>Cloth Config API（对于2.x版本而言）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.26-1.21.4</code> <code>forge1.16.1-1.20.1</code> <code>neoforge1.20.1-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/7588.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/thinkbeforedrop">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/think-before-drop">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="18">18.Detail Armor Bar（中文译名：细节盔甲）</h2></a>
+
+<p>描述：能够显示多于20点盔甲值，并以一种美观且优雅的方式显示玩家身上所穿盔甲<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：无<br />
+前置模组：<code>Fabric API（fabric）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code><br />
+支持的版本：<code>fabric1.16.5-1.21.4</code> <code>forge1.16.5-1.19.2</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/4590.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/detail-armor-bar">modrinth链接</a><br />
+curseforge链接：<br />
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/detail-armor-bar">fabric</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/detail-armor-bar-forge">forge</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="19">19.Skin Layers 3D（中文译名：3D皮肤层）</h2></a>
+
+<p>描述：以 3D 立体的方式渲染玩家皮肤的第二层<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：无<br />
+前置模组：无<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.15-1.21.4</code> <code>forge1.8.8-1.21.4</code> <code>neoforge1.20.2-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/4618.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/3dskinlayers">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="20">20.Armor Visibility</h2></a>
+
+<p>描述：可以设置自己以及其他实体的盔甲是否渲染<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★★★✰✰<br />
+内置模组：无<br />
+前置模组：<code>Fabric API（fabric）</code>、<code>Ash API（fabric、forge和neoforge）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.15-1.20.6</code> <code>forge1.15-1.20.6</code> <code>neoforge1.20.2、1.20.4、1.20.6</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/6639.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/armor-visibility">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/armor-visibility">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="21">21.Continuity</h2></a>
+
+<p>描述：新增无缝玻璃和各种方块的材质连接<br />
+是否支持中文：是<br />
+辅助性：★★★★★<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：无<br />
+前置模组：<code>Indium</code>（中文译名：铟，前置：<code>Sodium</code>（中文译名：<code>钠</code>））<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.17.1-1.21.4</code> <code>forge1.20.1</code> <code>neoforge1.21.1</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/4906.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/continuity">modrinth链接</a><a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/continuity">curseforge链接</a><br />
+注：可以在<code>forge</code>上使用<code>Sinytra Connector（中文译名：信雅互联）</code>来实现类似的功能<br />
+<a target="_blank" href="https://www.mcmod.cn/class/11627.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/connector">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/sinytra-connector">curseforge链接</a><br />
+但是<code>Sinytra Connector（中文译名：信雅互联）</code>需要前置模组<code>Forgified Fabric API</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/11464.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/forgified-fabric-api">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/forgified-fabric-api">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="22">22.IMBlocker（中文译名：输入法冲突修复）</h2></a>
+
+<p>描述：修复Minecraft在正常游戏的时候和中文，日文，韩文输入法冲突的现象<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：无<br />
+前置模组：无<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.18.2-1.21.4</code> <code>forge1.14.4-1.20.4</code> <code>neoforge1.20.6、1.21、1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/3358.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/imblocker-original">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/imblocker">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="23">23.AppleSkin（中文译名：苹果皮）</h2></a>
+
+<p>描述：显示原版被隐藏的饱和度以及在手持食物时显示可回复的饱食度和饱和度和预计可恢复的血量<br />
+是否支持中文：是<br />
+辅助性：★★★★★<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：<code>Cloth Config API（fabric）</code><br />
+前置模组：无<br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.14-1.21.4</code> <code>forge1.10.2-1.21.4</code> <code>neoforge1.20.2-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/744.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/appleskin">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/appleskin">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="24">24.Trade Enchantment Display（中文译名：交易附魔显示）</h2></a>
+
+<p>描述：显示职业为图书管理员的村民交易的附魔书的属性以及价格<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：无<br />
+前置模组：<code>Fabric API（fabric）</code>、<code>Cloth Config API（fabric、forge和neoforge）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.16.5-1.21.1</code> <code>forge1.16.5-1.20.4</code> <code>neoforge1.20.5-1.21.1</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/15979.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/trade-enchantment-display">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/trade-enchantment-display">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="25">25.Leawind&#39;s Third Person（中文译名：Leawind的第三人称）</h2></a>
+
+<p>描述：更改了原版的第三人称，使其更加灵活<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：<code>mixinextras（fabric和forge）</code>
+前置模组：<code>Architectury API（fabric和forge）</code>、<code>YetAnotherConfigLib或者Cloth Config API（fabric和forge）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code><br />
+支持的版本：<code>fabric1.19.2-1.20.4</code> forge1.19.2&#8211;1.20.4`<br />
+<a target="_blank" href="https://www.mcmod.cn/class/12699.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/leawind-third-person">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/leawind-third-person">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="26">26.Better Mount HUD（中文译名：更好的骑乘HUD）、Leave My Bars Alone（中文译名：改进的骑乘HUD）和Better Horse Hud（中文译名：更好的骑马 HUD）</h2></a>
+
+<p>描述：优化了原版的骑乘生物时的HUD，使生物的血量不再遮挡自己的饥饿度以及生物的跳跃蓄力不再遮挡自己的经验条<br />
+是否支持中文：是<br />
+辅助性：★★★★✰<br />
+作弊性：✰✰✰✰✰<br />
+内置模组：<br />
+Better Mount HUD（中文译名：更好的骑乘HUD）：<code>无</code><br />
+HUDLeave My Bars Alone（中文译名：改进的骑乘HUD）：<code>无</code><br />
+Better Horse Hud（中文译名：更好的骑马 HUD）：<code>无</code><br />
+前置模组：<br />
+Better Mount HUD（中文译名：更好的骑乘HUD）：<code>无</code><br />
+Leave My Bars Alone（中文译名：改进的骑乘HUD）：<code>Puzzles Lib（fabric、forge和neoforge）</code>、<code>Forge Config API Port（fabric）</code><br />
+Better Horse Hud（中文译名：更好的骑马 HUD）：<code>无</code><br />
+支持的模组加载器：<br />
+Better Mount HUD（中文译名：更好的骑乘HUD）：<code>fabric</code><br />
+Leave My Bars Alone（中文译名：改进的骑乘HUD）：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+Better Horse Hud（中文译名：更好的骑马 HUD）：<code>forge</code><br />
+支持的版本：<br />
+Better Mount HUD（中文译名：更好的骑乘HUD）：<code>fabric1.16.5-1.21.1、1.21.3、1.21.4</code><br />
+Leave My Bars Alone（中文译名：改进的骑乘HUD）：<code>fabric1.19.2-1.21.3</code> <code>forge1.16.2-1.20.4</code> <code>neoforge1.20.4、1.21.1、1.21.3</code><br />
+Better Horse Hud（中文译名：更好的骑马 HUD）：<code>forge1.7.2-1.10.2</code><br />
+MC百科链接：<br />
+<a target="_blank" href="https://www.mcmod.cn/class/4894.html">Better Mount HUD（中文译名：更好的骑乘HUD）</a> <a target="_blank" href="https://www.mcmod.cn/class/9900.html">Leave My Bars Alone（中文译名：改进的骑乘HUD）</a> <a target="_blank" href="https://www.mcmod.cn/class/5856.html">Better Horse Hud（中文译名：更好的骑马 HUD）</a>
+modrinth链接：<br />
+<a target="_blank" href="https://modrinth.com/mod/better-mount-hud">Better Mount HUD（中文译名：更好的骑乘HUD）</a> <a target="_blank" href="https://modrinth.com/mod/leave-my-bars-alone">Leave My Bars Alone（中文译名：改进的骑乘HUD）</a>
+curseforge链接：<br />
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/better-mount-hud">Better Mount HUD（中文译名：更好的骑乘HUD）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/leave-my-bars-alone">Leave My Bars Alone（中文译名：改进的骑乘HUD）</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/better-horse-hud">Better Horse Hud（中文译名：更好的骑马 HUD）</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="27">27.Advanced XRay（中文译名：高级透视）</h2></a>
+
+<p>描述：比普通的矿透更高级，可以直接隔着方块高亮显示你想要寻找的方块（慎用，作弊性较强）<br />
+是否支持中文：否<br />
+辅助性：★★★★✰<br />
+作弊性：★★★★✰<br />
+内置模组：<code>无</code><br />
+前置模组：<code>无</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>fabric1.16-1.21.4</code> <code>forge1.11.2-1.20.4</code> <code>neoforge1.20.1-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/4487.html">MC百科链接</a><br />
+curseforge链接：<br />
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/advanced-xray-fabric-edition">fabric</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/advanced-xray">forge</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="28">28.litematica（中文译名：投影）</h2></a>
+
+<p>描述：可以从文件中加载投影，使你的建造更加方便，也可以将指定区域保存为投影文件，方便分享给他人<br />
+是否支持中文：否，但有汉化包（<a target="_blank" href="https://github.com/DreamingLri/masa-mods-chinese/releases">链接</a>，可能需要GitHub加速）<br />
+辅助性：★★★★✰<br />
+作弊性：★★✰✰✰<br />
+内置模组：<code>无</code><br />
+前置模组：<code>Fabric API（fabric）</code>、<code>Masa's Litemod Library（简称MaLiLib，fabric和forge）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge</code><br />
+支持的版本：<code>fabric1.12.2-1.21.4</code> <code>forge1.12.2、1.16.5</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/2261.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/litematica">modrinth链接</a><br />
+curseforge链接：<br />
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/litematica">fabric</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/litematica-forge">forge（只有1.16.5的）</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="29">29.Forgematica/Litematica-Forge（中文译名：全息蓝图）</h2></a>
+
+<p>描述：可以从文件中加载投影，使你的建造更加方便，也可以将指定区域保存为投影文件，方便分享给他人（litematica（中文译名：投影）的移植）<br />
+是否支持中文：否<br />
+辅助性：★★★★✰<br />
+作弊性：★★✰✰✰<br />
+内置模组：<code>无</code><br />
+前置模组：<code>MaFgLib/MaLiLib-Forge（forge和neoforge）</code><br />
+支持的模组加载器：<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>forge1.16.4-1.20.1</code> <code>neoforge1.20.1-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/10142.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/forgematica">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/forgematica">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="30">30.MiniHUD（中文译名：迷你HUD）</h2></a>
+
+<p>描述：可以在屏幕上以文字显示一些信息行，其方式、背景、文字颜色都是可配置的<br />
+是否支持中文：否，但有汉化包（<a target="_blank" href="https://github.com/DreamingLri/masa-mods-chinese/releases">链接</a>，可能需要GitHub加速）<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：<code>无</code><br />
+前置模组：<code>Fabric API（fabric）</code>、<code>Masa's Litemod Library（简称MaLiLib，fabric和forge）</code><br />
+支持的模组加载器：<code>fabric</code>、<code>forge（低版本）</code><br />
+支持的版本：<code>fabric1.12.2-1.21.4</code> <code>forge1.8、1.8.9、1.9、1.9.4、1.10、1.10.2、1.11、1.11.2、1.12、1.12.2、1.14.4、1.15.2</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/2311.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/minihud">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/minihud">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="31">31.BoccHUD/MiniHUD-Forge（中文译名：孤独HUD）</h2></a>
+
+<p>描述：可以在屏幕上以文字显示一些信息行，其方式、背景、文字颜色都是可配置的。（MiniHUD（中文译名：迷你HUD）的移植）<br />
+是否支持中文：否<br />
+辅助性：★★★★✰<br />
+作弊性：★✰✰✰✰<br />
+内置模组：<code>无</code><br />
+前置模组：<code>MaFgLib/MaLiLib-Forge（forge和neoforge）</code><br />
+支持的模组加载器：<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>forge1.16.5-1.20.1</code> <code>neoforge1.20.1-1.21.1</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/10601.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/bocchud">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/bocchud">curseforge链接</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="32">32.Tweakeroo和TweakerMore</h2></a>
+
+<p>描述：包含多种对原版游戏的优化、降低客户端卡顿等<br />
+是否支持中文：否，但有汉化包（<a target="_blank" href="https://github.com/DreamingLri/masa-mods-chinese/releases">链接</a>，可能需要GitHub加速）<br />
+辅助性：★★★★✰<br />
+作弊性：★★★✰✰<br />
+内置模组：<br />
+Tweakeroo：<code>无</code><br />
+TweakerMore：<code>conditional mixin</code>、<code>fabric api base</code>、<code>fabric command api v2</code>、<code>mixinextras</code><br />
+前置模组：<br />
+Tweakeroo：<code>Masa's Litemod Library（简称MaLiLib，fabric和forge）</code><br />
+TweakerMore：<code>Masa's Litemod Library（简称MaLiLib，fabric）</code><br />
+支持的模组加载器：<br />
+Tweakeroo：<code>fabric</code>、<code>forge</code><br />
+TweakerMore：<code>fabric</code><br />
+支持的版本：<br />
+Tweakeroo：<code>fabric1.12.2-1.21.4</code> <code>forge1.12.2</code><br />
+TweakerMore：<code>fabric1.14.4-1.21.1</code>
+MC百科链接：<br />
+<a target="_blank" href="https://www.mcmod.cn/class/2230.html">Tweakeroo</a> <a target="_blank" href="https://www.mcmod.cn/class/5771.html">TweakerMore</a><br />
+modrinth链接：<br />
+<a target="_blank" href="https://modrinth.com/mod/tweakeroo">Tweakeroo</a> <a target="_blank" href="https://modrinth.com/mod/tweakermore">TweakerMore</a><br />
+curseforge链接：<br />
+<a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/tweakeroo">Tweakeroo</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/tweakermore">TweakerMore</a></p>
+
+<a style="text-decoration: none; color: black; display: inline-block" href="index.html"><h2 id="33">33.Tweakerge</h2></a>
+
+<p>描述：包含多种对原版游戏的优化、降低客户端卡顿等（<code>Tweakeroo</code>的移植）<br />
+是否支持中文：否<br />
+辅助性：★★★★✰<br />
+作弊性：★★★✰✰<br />
+内置模组：<code>无</code><br />
+前置模组：<code>MaFgLib/MaLiLib-Forge（forge和neoforge）</code><br />
+支持的模组加载器：<code>forge</code>、<code>neoforge</code><br />
+支持的版本：<code>forge1.16.5-1.21</code> <code>neoforge1.20.1-1.21.4</code><br />
+<a target="_blank" href="https://www.mcmod.cn/class/10906.html">MC百科链接</a> <a target="_blank" href="https://modrinth.com/mod/tweakerge">modrinth链接</a> <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/tweakerge">curseforge链接</a></p>
+
+<p>没有更多了&#8230;&#8230;</p>
+</body>
+<script>
+/* 当用户点击按钮时，切换下拉菜单内容的隐藏和显示状态 */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// 如果用户在下拉菜单外部单击，则关闭下拉菜单
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>
