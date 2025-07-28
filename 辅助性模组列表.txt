@@ -557,6 +557,34 @@ MC百科链接：https://www.mcmod.cn/class/10906.html
 modrinth链接：https://modrinth.com/mod/tweakerge
 curseforge链接：https://www.curseforge.com/minecraft/mc-mods/tweakerge
 
+34.Crafting Tweaks（中文译名：合成辅助）
+描述：提供三个按钮和一些快捷键，用于简化和改善一些合成方式。
+是否支持中文：不涉及
+辅助性：★★✰✰✰
+作弊性：✰✰✰✰✰
+内置模组：无
+前置模组：Balm（游戏1.17版本以上，fabric、forge和neoforge）
+支持的模组加载器：fabric、forge、neoforge
+支持的版本：fabric1.17.1-1.21.8  forge1.7.10-1.21.8  neoforge1.20.2-1.21.8
+MC百科链接：https://www.mcmod.cn/class/1501.html
+modrinth链接：https://modrinth.com/mod/crafting-tweaks
+curseforge链接：
+fabric<=1.21.1：https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks-fabric
+Forge、NeoForge及Fabric>=1.21.2：https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks
+
+35.Just Enough Characters（中文译名：通用拼音搜索）
+描述：这个模组修改了一些模组进行文本匹配的方式，现在你可以直接用拼音搜索（全拼或者声母或者混合输入）。
+是否支持中文：是
+辅助性：★★★✰✰
+作弊性：✰✰✰✰✰
+内置模组：JustEnoughCharacters.coremod-neoforge、PinIn
+前置模组：Fabric API（fabric）
+支持的模组加载器：fabric、forge、neoforge
+支持的版本：fabric1.16.5、1.18.2、1.19.2、1.20、1.20.1、1.21、1.21.1、1.21.4、1.21.5  forge1.10.2-1.20.1  neoforge1.21、1.21.1、1.21.4、1.21.5
+MC百科链接：https://www.mcmod.cn/class/840.html
+modrinth链接（>=1.20）：https://modrinth.com/mod/justenoughcharacters
+curseforge链接：https://www.curseforge.com/minecraft/mc-mods/just-enough-characters
+
 ★✰
 
 描述：
